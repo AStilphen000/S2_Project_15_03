@@ -33,5 +33,22 @@ window.addEventListener("load", function() {
       document.getElementById("regSubmit").onclick = sessionTest;
       document.getElementById("fnBox").onblur = calcCart;
       document.getElementById("lnBox").onblur = calcCart;
-
+      document.getElementById("groupBox").onblur = calcCart;
+      document.getElementById("mailBox").onblur = calcCart;
+      document.getElementById("phoneBox").onblur = calcCart;
+      document.getElementById("banquetBox").onblur = calcCart;
+      document.getElementById("sessionBox").onchange = calcCart;
+      document.getElementById("mediaCB").onclick = calcCart;
 });
+
+function sessiontest() {
+      if (sessionBox.selectedIndex === -1) {
+            sessionBox.setCustomValidity("Select a session package");
+      } else {
+            sessionBox.setCustomValidity("");
+      }
+}
+
+function calcCart() {
+      sessionStorage.
+}
