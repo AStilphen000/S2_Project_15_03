@@ -7,8 +7,8 @@
 
    Filename: mas_register.js
 
-   Author:  
-   Date:    
+   Author:  Angelina Stilphen
+   Date:    4.23.19
    
    Function List
    =============
@@ -28,3 +28,10 @@
 
 */
 
+window.addEventListener("load", function() {
+      calcCart();
+      document.getElementById("regSubmit").onclick = sessionTest;
+      document.getElementById("fnBox").onblur = calcCart;
+      document.getElementById("lnBox").onblur = calcCart;
+
+});
